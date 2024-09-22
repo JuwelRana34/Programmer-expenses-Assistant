@@ -13,7 +13,7 @@
 <body class="bg-gray-50 flex justify-center items-center mt-20">
   
     <div class="main-div bg-white mx-auto shadow-md w-[95%] md:w-2/6 p-5 rounded-lg"  >
-        <h1 class=" bg-gradient-to-r from-blue-600 to-violet-600 my-5 rounded-md p-4 text-md md:text-xl font-semibold text-center text-white">Programmer expenses Assistant</h1>
+        <h1 class=" bg-gradient-to-r from-blue-400 to-violet-400 my-5 rounded-md p-4 text-md md:text-xl font-semibold text-center text-white">Programmer expenses Assistant</h1>
         <!-- main two btn  -->
          <div class="grid grid-cols-2">
              <button id="Assistant" class="bg-gradient-to-r from-blue-600 to-indigo-700  p-2 text-white text-xl rounded-md rounded-r-none">Assistant</button>
@@ -56,7 +56,7 @@
         <!-- saving input  -->
 
 
-             <div>
+             <div id="savingDiv">
                 <div class="saving mt-5">
                     <label for="" class="block font-semibold" >saving% <br>
                         <input id="saving" class=" focus:outline outline-green-300 w-full border p-2 rounded-md " type="number" placeholder="saving ">
@@ -67,6 +67,7 @@
             </div>
    
         <!-- show all calculate result -->
+         
         <div id="balanceShowDiv" class=" transition-opacity hidden grid grid-cols-2 gap-2 border rounded-md mt-2 p-2">
             <div class=" p-4  rounded-md border-b border-l-4 bg-gray-50 border-l-blue-600">
                 <p>total expenses</p>
@@ -87,7 +88,11 @@
 
         </div>
         <!-- transition history -->
-        <div></div>
+        <div>
+            <h1 class="text-2xl text-center font-semibold bg-gradient-to-r from-blue-500 to-violet-800 text-transparent bg-clip-text  "> 📈expenses history</h1>
+
+            <div id="transitionHistory" class="hidden grid grid-cols-1 gap-2"></div>
+        </div>
     </div>
 
 
